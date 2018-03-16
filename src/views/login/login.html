@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>login</title>
+    <script src="http://rescdn.qqmail.com/node/ww/wwopenmng/js/sso/wwLogin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body >
+
+<div id="wx_reg" ></div>
+
+<script>
+    window.WwLogin({
+        "id" : "wx_reg",  //显示二维码的容器id
+        "appid" : "ww22c9df14d89aff1f",//企业微信的cropID，在 企业微信管理端->我的企业 中查看
+        "agentid" : "1000003",         //授权方的网页应用ID，在具体的网页应用中查看
+        "redirect_uri" :"http%3a%2f%2f155.test.intra.guocihuatai.com%2fui",   //重定向地址，需要进行UrlEncode
+        "state" : "guocihuatai",   //用于保持请求和回调的状态，授权请求后原样带回给企业。该参数可用于防止csrf攻击（跨站请求伪造攻击），建议企业带上该参数
+        "href" : "",    //自定义样式链接，企业可根据实际需求覆盖默认样式。详见文档底部FAQ
+
+    });
+</script>
+
+</body>
+</html>
